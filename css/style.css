@@ -27,6 +27,7 @@ body {
 }
 
 .memory-card {
+    /* qui ho guardato su internet come utilizzare cal con altezza e larghezza */
     width: calc(25% - 10px);
     height: calc(33% - 10px);
     /* border: 2px solid yellow; */
@@ -34,6 +35,7 @@ body {
     margin: 5px;
     transform: scale(1);
     transform-style: preserve-3d;
+    /* qui ho guardato su internet come fare l'effetto 3d */
     transition: transform .3s;
 
 }
@@ -53,6 +55,12 @@ body {
     border-radius: 5px;
     background-color: rgb(69, 61, 61);
     backface-visibility: hidden;
+    /* anche questo backface l'ho cercato su internet */
+}
+
+.front-face {
+    transform: rotateY(180deg);
+    /* in questo modo riesco a vedere l'immagine (card) che c'è sotto */
 }
 
 .memory-card.flip {
